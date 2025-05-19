@@ -1,0 +1,149 @@
+
+/* === Global === */
+body {
+  background-color: #0d0d0d;
+  color: #00ff00;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 2rem;
+  margin: 0;
+}
+
+nav {
+  background-color: #121212;
+  border: 1px solid #00ff00;
+  padding: 0.75rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+nav a {
+  color: #00ff00;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-shadow: none;
+}
+/* BASE STYLE: minimal, no glow */
+
+/* links */
+
+/* All links: same color, no glow, no outline */
+a {
+  color: #ff00c8;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-shadow: none;
+  outline: none;
+}
+
+/* Remove default focus outline (keyboard/tab clicks) */
+
+a:focus {
+  outline: none;
+}
+
+/* Hover: always underline */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Visited: same color, underline always */
+a:visited {
+  color: #ff00c8;
+  text-decoration: underline;
+  text-shadow: none;
+  outline: none;
+}
+
+.container {
+  display: flex;
+}
+
+.flex-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-bottom: 2rem; /* creates spacing from BBS post */
+}
+
+
+.column {
+  flex: 1;
+  background-color: #1a1a1a;
+  color: #ff00ff;
+  border: 1px solid #ff00ff;
+  padding: 1rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.column pre {
+  text-align: center;
+}
+
+.void {
+  flex: 1;
+  gap: 1rem;
+  background-color: #1a1a1a;
+  border: 1px solid #ff00ff;
+  padding: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  font-family: inherit;
+  text-align: left;
+
+}
+
+.void ul {
+  padding-left: 1.5rem;
+  list-style-position: outside;
+}
+
+.void li {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.cursor {
+  display: inline-block;
+  width: 1ch;
+  animation: blink 1s steps(2, start) infinite;
+  color: #ff00ff; /* Match CRT aesthetic */
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.log-block pre {
+  background-color: #0d0d0d;
+  color: #00ff00;
+  font-family: 'Share Tech Mono', monospace;
+  border: 1px solid #00ff00;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+code {
+  background-color: #000;
+  color: #00ff00;
+  font-family: 'Share Tech Mono', monospace;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #00ff00;
+  border-radius: 3px;
+  font-size: 0.95rem;
+}
+
+
+
+/* Created by VoidPunkXero – Day 2 of the grind */
+
+
